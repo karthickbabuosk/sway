@@ -13,3 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+//= require custom1.js
+//= require custom2.js
+//= require bootstrap.min.js
+//= require Demo.js
+//= require DemoDashboard.js
+//= require custom3.js
+//= require jquery.autosize.min.js
+//= require jquery.knob.min.js
+//= require jquery.nanoscroller.min.js
+//= require jquery.sparkline.min.js
+//= require moment.min.js
+//= require rickshaw.min.js
+//= require spin.min.js

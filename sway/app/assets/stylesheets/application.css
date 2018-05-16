@@ -11,3 +11,13 @@
  *= require_self
  *= require_tree .
  */
+
+//=require bootstrap
+//=require font-awesome.min
+//=require material-design-iconic-font.min
+//=require materialadmin
+//=require morris.core
+//=require rickshaw
+//=require bootstrap
+
+
