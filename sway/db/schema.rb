@@ -11,7 +11,45 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20180516163737) do
+ActiveRecord::Schema.define(:version => 20180516203623) do
+
+  create_table "accounts", :force => true do |t|
+    t.integer  "account_id",   :limit => 8
+    t.string   "account_name"
+    t.string   "status"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
+
+  create_table "billing_site", :force => true do |t|
+    t.string   "site"
+    t.string   "api_key"
+    t.integer  "user_id",    :limit => 8
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  create_table "cancel_events", :force => true do |t|
+    t.integer  "account_id", :limit => 8
+    t.integer  "events"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  create_table "cancel_feedback", :force => true do |t|
+    t.integer  "detour_form_id", :limit => 8
+    t.integer  "account_id",     :limit => 8
+    t.text     "feedback"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
+  end
+
+  create_table "detour_form", :force => true do |t|
+    t.integer  "user_id",    :limit => 8
+    t.text     "form_data"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
 
   create_table "user_sessions", :force => true do |t|
     t.string   "session_id"
