@@ -1,16 +1,17 @@
-// Place all the styles related to the detour controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-#detor_form, #settings_form{
-	width : 700px;
-	margin: 50px auto 0 auto;
-	#form-configuration{
-		#extend_trial_form{
-			margin-left: 50px;	
-		}
-		.col-lg-6{
-			padding-left:0;
-		}
-	}	
+#detor_form,
+#settings_form {
+    width: 700px;
+    margin: 100px;
+    background: #fff;
+    border-radius: 2px;
+    padding: 25px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    #form-configuration {
+        #extend_trial_form {
+            margin-left: 50px;
+        }
+        .col-lg-6 {
+            padding-left: 0;
+        }
+    }
 }
