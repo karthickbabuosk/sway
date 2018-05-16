@@ -63,5 +63,6 @@ Sway::Application.routes.draw do
   match '/signin',  to: 'user_sessions#new'
   match '/signout', to: 'user_sessions#destroy', via: :delete
   resources :detour, :only => :index
+  resources :settings, :only => :index
   root :to => 'detour#index'
 end

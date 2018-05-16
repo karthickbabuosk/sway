@@ -6,6 +6,7 @@
         <ul class="nav pull-right">
           <li><%= link_to "Home", root_path %></li>
           <% if signed_in? %>
+            <li><%= link_to "Detour", detour_index_path %></li>
             <li><%= link_to "My Profile", user_path(:id => current_user.id) %></li>
             <li><%= link_to "Settings", edit_user_path(current_user) %></li>
             <li><%= link_to "Sign out", signout_path, method: "delete" %></li>

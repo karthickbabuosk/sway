@@ -1,1 +1,38 @@
-<%= @sway %>
+<%= stylesheet_link_tag    "application", media: "all" %>
+<div id="detor_form">
+	<h4>
+		Form Configuration
+	</h4>
+	<form id="form-configuration">		
+			<div>
+				<label>  				
+	  				I need more time, extend my trial
+	  			</label>
+	  		</div>
+	  		<div class="row" id="extend_trial_form">
+	  			<div class="col-lg-6">
+			  		<div class="form-group">
+			  			<label>
+			  				Instructions  				
+			  			</label>
+			  			<input type="text" class="form-control" placeholder = "Extend My Trial by 15 days"/>      				
+			  		</div>					  		
+			  		<div class="form-group">
+			  			<label>
+			  				Maximum Trial Allowed
+			  			</label>
+			  			<input type="text" class="form-control" placeholder="Enter value" id="max_trial"/>
+			  		</div>
+			  		<div class="form-group">
+			  			<label>
+			  				Notify manager whenever maximum trial reached 
+			  			</label>
+			  			<input type="text" class="form-control" placeholder="Enter mail id" /> 
+			  		</div>
+			  	</div>	
+		  	</div>
+		  	<div class="form-group pull-right col-lg-6">
+		  		<input type="submit" value="Save" class="btn btn-primary"/>
+		  	</div>
+	</form>
+</div>
