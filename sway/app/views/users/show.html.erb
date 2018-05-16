@@ -12,6 +12,7 @@
 </div>  -->
 <%= stylesheet_link_tag    "application", media: "all" %>
 
+<% content_for :layoutType do %>menubar-hoverable header-fixed <% end %>
 <header id="header">
         <div class="headerbar">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -51,14 +52,14 @@
                             <li class="dropdown-header">Today's messages</li>
                             <li>
                                 <a class="alert alert-callout alert-warning" href="javascript:void(0);">
-                            <img class="pull-right img-circle dropdown-avatar" src="./source/avatar2.jpg" alt="">
+                            <img class="pull-right img-circle dropdown-avatar" src="/assets/avatar2.jpg" alt="">
                             <strong>Alex Anistor</strong><br>
                             <small>Testing functionality...</small>
                         </a>
                             </li>
                             <li>
                                 <a class="alert alert-callout alert-info" href="javascript:void(0);">
-                            <img class="pull-right img-circle dropdown-avatar" src="./source/avatar3.jpg" alt="">
+                            <img class="pull-right img-circle dropdown-avatar" src="/assets/avatar3.jpg" alt="">
                             <strong>Alicia Adell</strong><br>
                             <small>Reviewing last changes...</small>
                         </a>
@@ -121,7 +122,7 @@
                 <ul class="header-nav header-nav-profile">
                     <li class="dropdown">
                         <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
-                    <img src="./source/avatar1.jpg" alt="">
+                    <img src="/assets/avatar1.jpg" alt="">
                     <span class="profile-info">
                         Daniel Johnson
                         <small>Administrator</small>
@@ -479,7 +480,7 @@
                                                 <li class="tile">
                                                     <div class="tile-content">
                                                         <div class="tile-icon">
-                                                            <img src="./source/avatar9.jpg" alt="">
+                                                            <img src="/assets/avatar9.jpg" alt="">
                                                         </div>
                                                         <div class="tile-text">Ann Laurens</div>
                                                     </div>
@@ -490,7 +491,7 @@
                                                 <li class="tile">
                                                     <div class="tile-content">
                                                         <div class="tile-icon">
-                                                            <img src="./source/avatar4.jpg" alt="">
+                                                            <img src="/assets/avatar4.jpg" alt="">
                                                         </div>
                                                         <div class="tile-text">Alex Nelson</div>
                                                     </div>
@@ -501,7 +502,7 @@
                                                 <li class="tile">
                                                     <div class="tile-content">
                                                         <div class="tile-icon">
-                                                            <img src="./source/avatar11.jpg" alt="">
+                                                            <img src="/assets/avatar11.jpg" alt="">
                                                         </div>
                                                         <div class="tile-text">Mary Peterson</div>
                                                     </div>
@@ -512,7 +513,7 @@
                                                 <li class="tile">
                                                     <div class="tile-content">
                                                         <div class="tile-icon">
-                                                            <img src="./source/avatar7.jpg" alt="">
+                                                            <img src="/assets/avatar7.jpg" alt="">
                                                         </div>
                                                         <div class="tile-text">Philip Ericsson</div>
                                                     </div>
@@ -523,7 +524,7 @@
                                                 <li class="tile">
                                                     <div class="tile-content">
                                                         <div class="tile-icon">
-                                                            <img src="./source/avatar8.jpg" alt="">
+                                                            <img src="/assets/avatar8.jpg" alt="">
                                                         </div>
                                                         <div class="tile-text">Jim Peters</div>
                                                     </div>
@@ -534,7 +535,7 @@
                                                 <li class="tile">
                                                     <div class="tile-content">
                                                         <div class="tile-icon">
-                                                            <img src="./source/avatar2.jpg" alt="">
+                                                            <img src="/assets/avatar2.jpg" alt="">
                                                         </div>
                                                         <div class="tile-text">Jessica Cruise</div>
                                                     </div>
@@ -657,7 +658,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar4.jpg" alt="">
+                                    <img src="/assets/avatar4.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Alex Nelson
@@ -668,7 +669,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar9.jpg" alt="">
+                                    <img src="/assets/avatar9.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Ann Laurens
@@ -684,7 +685,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar2.jpg" alt="">
+                                    <img src="/assets/avatar2.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Jessica Cruise
@@ -695,7 +696,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar8.jpg" alt="">
+                                    <img src="/assets/avatar8.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Jim Peters
@@ -711,7 +712,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar5.jpg" alt="">
+                                    <img src="/assets/avatar5.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Mabel Logan
@@ -722,7 +723,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar11.jpg" alt="">
+                                    <img src="/assets/avatar11.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Mary Peterson
@@ -733,7 +734,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar3.jpg" alt="">
+                                    <img src="/assets/avatar3.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Mike Alba
@@ -749,7 +750,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar6.jpg" alt="">
+                                    <img src="/assets/avatar6.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Nathan Peterson
@@ -765,7 +766,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar7.jpg" alt="">
+                                    <img src="/assets/avatar7.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Philip Ericsson
@@ -781,7 +782,7 @@
                         <li class="tile">
                             <a class="tile-content ink-reaction" href="http://www.codecovers.eu/materialadmin/dashboards/dashboard#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
                                 <div class="tile-icon">
-                                    <img src="./source/avatar10.jpg" alt="">
+                                    <img src="/assets/avatar10.jpg" alt="">
                                 </div>
                                 <div class="tile-text">
                                     Samuel Parsons
@@ -818,7 +819,7 @@
                     <ul class="list-chats">
                         <li>
                             <div class="chat">
-                                <div class="chat-avatar"><img class="img-circle" src="./source/avatar1.jpg" alt=""></div>
+                                <div class="chat-avatar"><img class="img-circle" src="/assets/avatar1.jpg" alt=""></div>
                                 <div class="chat-body">
                                     Yes, it is indeed very beautiful.
                                     <small>10:03 pm</small>
@@ -828,7 +829,7 @@
                         </li>
                         <li class="chat-left">
                             <div class="chat">
-                                <div class="chat-avatar"><img class="img-circle" src="./source/avatar9.jpg" alt=""></div>
+                                <div class="chat-avatar"><img class="img-circle" src="/assets/avatar9.jpg" alt=""></div>
                                 <div class="chat-body">
                                     Did you see the changes?
                                     <small>10:02 pm</small>
@@ -838,7 +839,7 @@
                         </li>
                         <li>
                             <div class="chat">
-                                <div class="chat-avatar"><img class="img-circle" src="./source/avatar1.jpg" alt=""></div>
+                                <div class="chat-avatar"><img class="img-circle" src="/assets/avatar1.jpg" alt=""></div>
                                 <div class="chat-body">
                                     I just arrived at work, it was quite busy.
                                     <small>06:44pm</small>
@@ -852,7 +853,7 @@
                         </li>
                         <li class="chat-left">
                             <div class="chat">
-                                <div class="chat-avatar"><img class="img-circle" src="./source/avatar9.jpg" alt=""></div>
+                                <div class="chat-avatar"><img class="img-circle" src="/assets/avatar9.jpg" alt=""></div>
                                 <div class="chat-body">
                                     The colors are much better now.
                                 </div>
@@ -865,7 +866,7 @@
                         </li>
                         <li>
                             <div class="chat">
-                                <div class="chat-avatar"><img class="img-circle" src="./source/avatar1.jpg" alt=""></div>
+                                <div class="chat-avatar"><img class="img-circle" src="/assets/avatar1.jpg" alt=""></div>
                                 <div class="chat-body">
                                     Are the colors of the logo already adapted?
                                     <small>Last week</small>
