@@ -4,7 +4,6 @@
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(@user_session) do |f| %>
-      <%= render 'layouts/error_messages' , :target => @user_session %>
 
       <%= f.label :email %>
       <%= f.text_field :email %>

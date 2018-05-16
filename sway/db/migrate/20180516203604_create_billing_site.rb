@@ -1,6 +1,6 @@
-class CreateBillingSite < ActiveRecord::Migration
+class CreateSetting < ActiveRecord::Migration
    def up
-  	create_table :billing_site do |t|  
+  	create_table :settings do |t|  
       t.string     :site
       t.string     :api_key
       t.integer		:user_id, :limit => 8
@@ -9,6 +9,6 @@ class CreateBillingSite < ActiveRecord::Migration
   end
 
   def down
-  	drop_table :billing_site
+  	drop_table :settings
   end
 end

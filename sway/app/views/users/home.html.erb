@@ -1,23 +1,21 @@
 <%= stylesheet_link_tag    "login", media: "all" %>
 <% content_for :layoutType do %>loginpage <% end %>
 <div class="materialContainer">
-    <form autocomplete="off" class="box">
+	<%= form_for(@user_session, :html => {:class => "box"}, :url => url_for(:controller => 'user_sessions', :action => 'create')) do |f| %>
     	 <input autocomplete="false" name="hidden" type="text" style="display:none;">
         <div class="title">LOGIN</div>
         <div class="input">
-            <label for="name">Username</label>
-            <input type="text" name="name" id="name" autocomplete="off">
-            <span class="spin"></span>
-        </div>
-        <div class="input">
-            <label for="pass">Password</label>
-            <input type="password" name="pass" id="pass" autocomplete="off">
-            <span class="spin"></span>
+        	<%= f.label :email %>
+	      	<%= f.text_field :email %>
+	    </div>
+	    <div class="input">
+	      <%= f.label :password %>
+	      <%= f.password_field :password %>
         </div>
         <div class="button login">
             <button><span>GO</span> <i class="fa fa-check"></i></button>
         </div>
-    </form>
+    <%end%>
     <div class="overbox">
     	<%= form_for(@user) do |f| %>
         <div class="material-button alt-2"><span class="shape"></span></div>

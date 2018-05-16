@@ -6,6 +6,10 @@ class UsersController < ApplicationController
   end
 
   def home
+  	if current_user
+    	redirect_to user_path(:id => current_user.id) 
+    end
+    @user_session = UserSession.new
     @user = User.new
   end
 
@@ -13,10 +17,20 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def login
+	@user_session = UserSession.new(params[:user_session])
+	if @user_session.save!
+		flash.now[:sucess] = "Login Sucessful!"
+		#current_user_session.user = User.find_by_email(params[:session][:email].downcase)
+		redirect_to current_user
+	else
+		render 'home'
+	end
+end
+
   def create
     @user = User.new(params[:user])
-
-    if @user.save
+    if @user.save!
       flash[:notice] = "Account created sucessfully!"
       redirect_to user_path(:id => current_user.id)
     else
