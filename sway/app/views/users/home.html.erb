@@ -1,21 +1,22 @@
 <%= stylesheet_link_tag    "login", media: "all" %>
 <div class="materialContainer">
-    <div class="box">
+    <form autocomplete="off" class="box">
+    	 <input autocomplete="false" name="hidden" type="text" style="display:none;">
         <div class="title">LOGIN</div>
         <div class="input">
             <label for="name">Username</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" autocomplete="off">
             <span class="spin"></span>
         </div>
         <div class="input">
             <label for="pass">Password</label>
-            <input type="password" name="pass" id="pass">
+            <input type="password" name="pass" id="pass" autocomplete="off">
             <span class="spin"></span>
         </div>
         <div class="button login">
             <button><span>GO</span> <i class="fa fa-check"></i></button>
         </div>
-    </div>
+    </form>
     <div class="overbox">
     	<%= form_for(@user) do |f| %>
 
@@ -23,7 +24,7 @@
         <div class="title">LOGIN</div>
         <div class="input">
       		<%= f.label :name %>
-      		<%= f.text_field :name %>
+      		<%= f.text_field :name, :autocomplete => "off" %>
             <!-- <label for="regname">Name</label>
             <input type="text" name="regname" id="regname"> -->
             <span class="spin"></span>
