@@ -3,11 +3,14 @@
   <head>
     <title>Sway</title>
     <%= javascript_include_tag "application" %>
+    <%= stylesheet_link_tag    "application", media: "all" %>
     <%= csrf_meta_tags %>
   </head>
   <body class="<%= (yield :layoutType) %>"> 
     <div class="">
-      <%= render 'layouts/header' %>
+      <% if signed_in? %>
+        <%= render 'layouts/header' %>
+      <% end %>
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
