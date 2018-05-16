@@ -1,17 +1,4 @@
-<!-- <div class="tabbable tabs-below">
-	<div class="tab-content">
-		<div class="center hero-unit" style="background-color:cornflowerblue" id="profile">
-			<h1> Hai <%= current_user.name %> </h1>
-			<p> Welcome!!! </p>
-		</div>
-	</div>
-	<ul class="nav nav-tabs">
-		<br/>
-		<li><i class="icon-star"></i><%= link_to "Profile", user_path(:id => current_user.id), style: 'display:inline' %></li>
-	</ul>
-</div>  -->
 <%= stylesheet_link_tag    "application", media: "all" %>
-
 <% content_for :layoutType do %>menubar-hoverable header-fixed <% end %>
 <header id="header">
         <div class="headerbar">
@@ -124,18 +111,13 @@
                         <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
                     <img src="/assets/avatar1.jpg" alt="">
                     <span class="profile-info">
-                        Daniel Johnson
-                        <small>Administrator</small>
+                        <%= current_user.name %>
                     </span>
                 </a>
                         <ul class="dropdown-menu animation-dock">
-                            <li class="dropdown-header">Config</li>
-                            <li><a href="http://www.codecovers.eu/materialadmin/pages/profile">My profile</a></li>
-                            <li><a href="http://www.codecovers.eu/materialadmin/pages/blog/post"><span class="badge style-danger pull-right">16</span>My blog</a></li>
-                            <li><a href="http://www.codecovers.eu/materialadmin/pages/calendar">My appointments</a></li>
-                            <li class="divider"></li>
-                            <li><a href="http://www.codecovers.eu/materialadmin/pages/locked"><i class="fa fa-fw fa-lock"></i> Lock</a></li>
-                            <li><a href="http://www.codecovers.eu/materialadmin/pages/login"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+                            <li><%= link_to "Profile", edit_user_path(current_user) %></li>
+                            <li><%= link_to "<i class='fa fa-fw fa-power-off text-danger'></i>".html_safe + "Logout", signout_path, method: "delete" %>
+                            </li>
                         </ul>
                         <!--end .dropdown-menu -->
                     </li>

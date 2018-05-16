@@ -42,7 +42,7 @@
 		var points = [20, 10, 25, 15, 30, 20, 30, 10, 15, 10, 20, 25, 25, 15, 20, 25, 10, 67, 10, 20, 25, 15, 25, 97, 10, 30, 10, 38, 20, 15, 82, 44, 20, 25, 20, 10, 20, 38];
 
 		materialadmin.App.callOnResize(function () {
-			var options = $('.sparkline-revenue').data();
+			var options = $('.sparkline-revenue').data() || {};
 			options.type = 'line';
 			options.width = '100%';
 			options.height = $('.sparkline-revenue').height() + 'px';
@@ -55,7 +55,7 @@
 			var barWidth = 6;
 			var spacing = (parent.width() - (points.length * barWidth)) / points.length;
 
-			var options = $('.sparkline-visits').data();
+			var options = $('.sparkline-visits').data() || {};
 			options.type = 'bar';
 			options.barWidth = barWidth;
 			options.barSpacing = spacing;
