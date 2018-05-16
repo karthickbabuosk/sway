@@ -1,0 +1,12 @@
+<div class="tabbable tabs-below">
+	<div class="tab-content">
+		<div class="center hero-unit" style="background-color:cornflowerblue" id="profile">
+			<h1> Hai <%= current_user.name %> </h1>
+			<p> Welcome!!! </p>
+		</div>
+	</div>
+	<ul class="nav nav-tabs">
+		<br/>
+		<li><i class="icon-star"></i><%= link_to "Profile", user_path(:id => current_user.id), style: 'display:inline' %></li>
+	</ul>
+</div> 
