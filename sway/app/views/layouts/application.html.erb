@@ -6,8 +6,8 @@
     <%= csrf_meta_tags %>
   </head>
   <body class="<%= (yield :layoutType) %>"> 
-    <%= render 'layouts/header' %>
     <div class="">
+      <%= render 'layouts/header' %>
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
