@@ -1,5 +1,5 @@
 $color_1: #fff;
-$color_2: #ED2553;
+$color_2: #2b5d8f;
 $color_3: rgba(0, 0, 0, 0.8);
 $color_4: rgba(0, 0, 0, 0.2);
 $color_5: rgba(0, 0, 0, 0.4);
@@ -7,7 +7,7 @@ $font_family_1: 'Roboto',
 sans-serif;
 $background_color_1: transparent;
 $background_color_2: #fff;
-$border_color_1: #ED2553;
+$border_color_1: #2b5d8f;
 
 body.loginpage {
     background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
@@ -82,7 +82,7 @@ body.loginpage {
             position: relative;
             color: $color_1 !important;
             display: none;
-            margin-top: 20px;
+            margin-top: 0;
             input {
                 color: $color_1;
             }
@@ -97,7 +97,7 @@ body.loginpage {
         left: 0;
         overflow: inherit;
         border-radius: 10px;
-        padding: 60px 50px 40px 50px;
+        padding: 35px 50px 40px 50px;
         .button {
             z-index: 111;
             position: relative;
@@ -134,7 +134,7 @@ body.loginpage {
             position: absolute;
             top: 0;
             left: -50px;
-            background: #ED2553;
+            background: #2b5d8f;
         }
     }
 
@@ -191,7 +191,7 @@ body.loginpage {
             position: absolute;
             bottom: 0;
             left: 0;
-            background: #ED2553;
+            background: #2b5d8f;
             z-index: 4;
             width: 0;
         }
@@ -301,7 +301,7 @@ body.loginpage {
         width: 140px;
         height: 140px;
         border-radius: 50%;
-        background: #ED2553;
+        background: #2b5d8f;
         position: absolute;
         top: 40px;
         right: -70px;
@@ -369,7 +369,7 @@ body.loginpage {
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        background: #ED2553;
+        background: #2b5d8f;
         position: absolute;
         top: 40px;
         right: -50px;
@@ -426,7 +426,7 @@ body.loginpage {
         position: absolute;
         top: 0;
         left: 0;
-        background: #ED2553;
+        background: #2b5d8f;
         border-radius: 50%;
     }
 
